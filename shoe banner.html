@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon Fashion - Under ₹799</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: #232f3e;
+            color: #fff;
+            padding: 16px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .logo {
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: #ff9900;
+        }
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .navbar .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1500x500?text=Fashion+Under+799+Shoes') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 120px 20px;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+        .section-title {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: #232f3e;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+        }
+        .product-card {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        .product-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 6px;
+        }
+        .product-price {
+            color: #b12704;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        .buy-btn {
+            background: #232f3e;
+            color: #fff;
+            border: none;
+            padding: 8px 0;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+        .buy-btn:hover {
+            background: #131921;
+        }
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">Amazon Fashion</div>
+        <div class="nav-links">
+            <a href="Amazon_clone.html">Home</a>
+            <a href="fashion.html">Fashion</a>
+            <a href="shoes.html">Shoes</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Fashion Deals Under ₹799</h1>
+        <p>Trendy Shoes for Men & Women | Limited Time Offers</p>
+    </div>
+
+    <div class="content">
+        <div class="section-title">Shoes You’ll Love</div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/220x150?text=Sneakers" alt="Sneakers">
+                <div class="product-title">Men's Casual Sneakers</div>
+                <div class="product-price">₹749</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/220x150?text=Running+Shoes" alt="Running Shoes">
+                <div class="product-title">Women's Running Shoes</div>
+                <div class="product-price">₹699</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/220x150?text=Loafers" alt="Loafers">
+                <div class="product-title">Men's Stylish Loafers</div>
+                <div class="product-price">₹779</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/220x150?text=Flip+Flops" alt="Flip Flops">
+                <div class="product-title">Unisex Flip Flops</div>
+                <div class="product-price">₹399</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
